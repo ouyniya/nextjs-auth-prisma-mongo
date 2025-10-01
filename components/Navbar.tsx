@@ -15,7 +15,7 @@ const Navbar = async () => {
         <Link href="/" className="hover:text-sky-500">
           <p>Public</p>
         </Link>
-        <Link href="/" className="hover:text-sky-500">
+        <Link href="/secret" className="hover:text-sky-500">
           <p>Secret</p>
         </Link>
         {!session?.user ? (
