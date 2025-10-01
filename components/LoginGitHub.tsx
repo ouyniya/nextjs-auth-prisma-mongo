@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { login } from "@/actions/auth";
 
@@ -6,7 +6,9 @@ const LoginGitHub = () => {
   return (
     <div
       onClick={() => login("github")}
-      className="flex gap-2 bg-gray-900 px-6 py-2 rounded-lg hover:cursor-pointer"
+      className="flex gap-2 
+      w-full justify-center items-center
+      bg-gray-900 px-4 py-2 rounded-lg hover:cursor-pointer"
     >
       <div className="w-5">
         <svg
