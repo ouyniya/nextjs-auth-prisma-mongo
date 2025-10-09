@@ -1,5 +1,6 @@
 import NextAuth from "next-auth";
 import GitHub from "next-auth/providers/github";
+import Google from "next-auth/providers/google";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import Credentials from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
@@ -16,6 +17,7 @@ export const {
   session: { strategy: "jwt" },
   providers: [
     GitHub,
+    Google,
     Credentials({
       name: "Credentials",
       credentials: {

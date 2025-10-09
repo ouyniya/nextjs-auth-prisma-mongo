@@ -2,6 +2,7 @@
 
 import LoginForm from "@/components/LoginForm";
 import LoginGitHub from "@/components/LoginGitHub";
+import LoginGoogle from "@/components/LoginGoogle";
 
 const SignIn = () => {
   return (
@@ -10,6 +11,9 @@ const SignIn = () => {
         <h1 className="font-semibold text-2xl">Sign in</h1>
         <LoginForm />
 
+        <div className="px-4 w-full">
+          <LoginGoogle />
+        </div>
         <div className="px-4 w-full">
           <LoginGitHub />
         </div>
