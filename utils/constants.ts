@@ -1,0 +1,95 @@
+import {
+  LayoutGrid,
+  User,
+  UploadCloud,
+  MessageCircle,
+  Calendar,
+} from "lucide-react"; // import ไอคอนที่ต้องการ
+
+
+export const reviews = [
+  {
+    name: "ธีมการ์ดหลากหลาย",
+    description: "เลือกธีมการ์ดแต่งงานสไตล์ที่ชอบ",
+    time: "1m ago",
+    icon: LayoutGrid,
+    color: "#F7DAE1",
+  },
+  {
+    name: "แกลเลอรี่รูปภาพ",
+    description: "อัพโหลดรูปถ่ายคู่บ่าวสาวได้",
+    time: "1m ago",
+    icon: UploadCloud,
+    color: "#F7E2D5",
+  },
+  {
+    name: "ระบบ RSVP",
+    description: "แขกยืนยันการเข้าร่วมงานผ่านฟอร์ม",
+    time: "1m ago",
+    icon: MessageCircle,
+    color: "#F7EFD5",
+  },
+  {
+    name: "Countdown",
+    description: "นับถอยหลังวันแต่งงานแบบเรียลไทม์",
+    time: "1m ago",
+    icon: Calendar,
+    color: "#ECF7D5",
+  },
+  {
+    name: "แผนที่และสถานที่",
+    description: "แผนที่ Google Maps",
+    time: "1m ago",
+    icon: LayoutGrid,
+    color: "#D5F7E0",
+  },
+  {
+    name: "Guest Book",
+    description: "แขกเขียนคำอวยพรให้คู่บ่าวสาว",
+    time: "1m ago",
+    icon: LayoutGrid,
+    color: "#D5F7F7",
+  },
+  {
+    name: "Dress Code",
+    description: "แจ้งธีมงาน การแต่งกาย",
+    time: "1m ago",
+    icon: MessageCircle,
+    color: "#D5E8F7",
+  },
+  {
+    name: "รองรับทุกหน้าจอ",
+    description: "เปิดดูได้สวยทั้งมือถือและคอมพิวเตอร์",
+    time: "1m ago",
+    icon: Calendar,
+    color: "#DAD5F7",
+  },
+  {
+    name: "กำหนดการงาน",
+    description: "แจ้งกำหนดการของงานแต่งงาน",
+    time: "1m ago",
+    icon: LayoutGrid,
+    color: "#F7D5ED",
+  },
+  {
+    name: "Contact Info",
+    description: "ใส่ช่องทางติดต่อฝ่ายเจ้าบ่าว-เจ้าสาว",
+    time: "1m ago",
+    icon: UploadCloud,
+    color: "#F7D5DE",
+  },
+  {
+    name: "เพลงประกอบ",
+    description: "เปิดอัตโนมัติเมื่อเข้าชมการ์ด",
+    time: "1m ago",
+    icon: MessageCircle,
+    color: "#F7E1D5",
+  },
+  {
+    name: "วิดีโอ",
+    description: "ฝังวิดีโอ Pre-wedding จาก YouTube ",
+    time: "1m ago",
+    icon: Calendar,
+    color: "#F7F5D5",
+  },
+];

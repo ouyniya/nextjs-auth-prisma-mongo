@@ -7,7 +7,7 @@ const LoginGitHub = () => {
     <div
       onClick={() => login("github")}
       className="flex gap-2 
-      w-full justify-center items-center
+      w-full justify-center items-center duration-300 hover:bg-gray-700 hover:shadow-sm 
       bg-gray-900 px-4 py-2 rounded-lg hover:cursor-pointer"
     >
       <div className="w-5">

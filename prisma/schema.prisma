@@ -19,7 +19,7 @@ model User {
   hashedPassword String?
   emailVerified  DateTime?
   image          String?
-  role           UserRole?       @default(ADMIN)
+  role           UserRole?       @default(USER)
   accounts       Account[]
   sessions       Session[]
   // Optional for WebAuthn support

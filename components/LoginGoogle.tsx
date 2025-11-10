@@ -7,8 +7,8 @@ const LoginGoogle = () => {
     <div
       onClick={() => login("google")}
       className="flex gap-2 
-      w-full justify-center items-center
-      bg-gray-50 px-4 py-2 border border-gray-200 rounded-lg hover:cursor-pointer"
+      w-full justify-center items-center 
+      bg-gray-50 duration-300 hover:bg-gray-200 hover:shadow-sm px-4 py-2 border border-gray-200 rounded-lg hover:cursor-pointer"
     >
       <div className="w-5">
         <svg
@@ -20,11 +20,9 @@ const LoginGoogle = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 210 210"
         >
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_bgCarrier"></g>
           <g
             id="SVGRepo_tracerCarrier"
-            stroke-linecap="round"
-            stroke-linejoin="round"
           ></g>
           <g id="SVGRepo_iconCarrier">
             {" "}

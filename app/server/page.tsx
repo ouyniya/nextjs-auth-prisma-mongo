@@ -8,8 +8,8 @@ const Server = async () => {
   }
 
   return (
-    <div className="flex h-full items-center justify-start mt-25 flex-col gap-4">
-      <h1 className="font-semibold text-xl">Secret Page</h1>
+    <div className="flex">
+      <h1 className="text-xl">Profile</h1>
       <p>{session?.user?.email}</p>
     </div>
   );
