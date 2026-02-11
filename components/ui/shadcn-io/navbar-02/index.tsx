@@ -277,7 +277,7 @@ export const Navbar02 = React.forwardRef<HTMLElement, Navbar02Props>(
         )}
         {...props}
       >
-        <div className="container mx-auto flex h-16 max-w-screen-2xl items-center justify-between gap-4">
+        <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between gap-4">
           {/* Left side */}
           <div className="flex items-center gap-2">
             {/* Mobile menu trigger */}
@@ -348,19 +348,20 @@ export const Navbar02 = React.forwardRef<HTMLElement, Navbar02Props>(
             {/* Main nav */}
             <div className="flex items-center gap-6">
               <button
-                // onClick={(e) => e.preventDefault()}
                 className="flex items-center space-x-2 text-primary hover:text-rose-900/50 
                 hover:bg-rose-100/0 
                 transition-colors cursor-pointer"
               >
-                <div className="hidden font-bold text-xl sm:inline-block">
-                  <Image
-                    src={"/logo-header.png"}
-                    width={152}
-                    height={36}
-                    alt="logo header"
-                  />
-                </div>
+                <Link href={logoHref}>
+                  <div className="hidden font-bold text-xl sm:inline-block">
+                    <Image
+                      src={"/logo-header.png"}
+                      width={152}
+                      height={36}
+                      alt="logo header"
+                    />
+                  </div>
+                </Link>
               </button>
               {/* Navigation menu */}
               {!isMobile && (

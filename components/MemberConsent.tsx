@@ -531,7 +531,7 @@ export default function MemberConsent({ visible = false }) {
         <div className="flex justify-center gap-4 mt-4"></div>
 
         <div className="flex justify-center gap-4 mt-4">
-          <Link href={`https://nysdev.com`}>
+          <Link href={`/`}>
             <button>
               <div className="flex items-center justify-center">
                 <div

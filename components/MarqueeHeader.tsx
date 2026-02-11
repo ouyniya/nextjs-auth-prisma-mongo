@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/ui/marquee";
 import { reviews } from "@/utils/constants";
 
-const firstRow = reviews.slice(0, reviews.length / 2);
+const firstRow = reviews.slice(0, reviews.length);
 
 const ReviewCard = ({
   name,

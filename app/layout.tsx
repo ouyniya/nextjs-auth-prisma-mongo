@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Mitr, Playpen_Sans_Thai } from "next/font/google";
+import { Mitr, Playpen_Sans_Thai, Sacramento } from "next/font/google";
 import "./globals.css";
 import { SessionProvider } from "next-auth/react";
 import { auth } from "@/auth";
 import Navbar from "@/components/Navbar";
+import FooterMe from "@/components/FooterMe";
 
 const mitrSans = Mitr({
   variable: "--font-mitr-sans",
@@ -15,6 +16,12 @@ const playPenSans = Playpen_Sans_Thai({
   variable: "--font-play-sans",
   subsets: ["thai", "latin"],
   weight: "200",
+});
+
+const SacramentoSans = Sacramento({
+  variable: "--font-sacramento-sans",
+  subsets: ["latin"],
+  weight: "400"
 });
 
 export const metadata: Metadata = {
@@ -33,13 +40,13 @@ export default async function RootLayout({
     <SessionProvider session={session}>
       <html lang="en">
         <body
-          className={`${mitrSans.variable} ${playPenSans.variable} antialiased text-gray-600`}
+          className={`${mitrSans.variable} ${playPenSans.variable}
+          ${SacramentoSans.variable} antialiased text-gray-600`}
         >
           <div className="mx-auto max-w-screen min-h-screen flex flex-col">
             <Navbar />
-            <div className="flex-grow">
-              {children}
-            </div>
+            <div className="flex-grow">{children}</div>
+            <FooterMe />
           </div>
         </body>
       </html>

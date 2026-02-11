@@ -39,7 +39,7 @@ const MockHome = () => {
         <div className="w-full flex flex-col gap-3 justify-center items-center">
           <Image src={"/sample.jpg"} width={500} height={500} alt="header" />
           <Image src={"/text.jpg"} width={500} height={200} alt="welcome" />
-          <p>test</p>
+          <p>test mock home</p>
         </div>
       </IphoneDiv>
     </div>

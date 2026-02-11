@@ -3,12 +3,13 @@
 import { PixelImage } from "@/components/ui/pixel-image";
 import MockHome from "./Mock-home";
 import Feature from "./Feature";
-import { Button } from "./ui/button";
 import Link from "next/link";
 import MarqueeHeader from "./MarqueeHeader";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
+import { ShinyButton } from "@/components/ui/shiny-button"
+import { AuroraText } from "@/components/ui/aurora-text"
 
 const HeaderHome = () => {
   const [height, setHeight] = useState(0);
@@ -49,7 +50,7 @@ const HeaderHome = () => {
                 className="mb-5 opacity-70"
               />
               <h1 className="text-3xl xl:text-4xl playpen text-rose-300 font-bold">
-                การ์ดแต่งงานออนไลน์
+                <AuroraText>การ์ดแต่งงานออนไลน์</AuroraText>
               </h1>
               <div className="mt-2 text-lg font-bold text-gray-500">
                 <p>
@@ -67,9 +68,9 @@ const HeaderHome = () => {
               </div>
 
               <div>
-                <Button className="bg-rose-200/75 shadow-sm shadow-rose-600/25 hover:bg-rose-100 hover:cursor-pointer duration-300 font-bold text-lg rounded-xl py-6 px-8 mt-12 text-rose-800/50 hover:text-rose-800/40">
-                  <Link href="/wedding-card">ดูตัวอย่างการ์ด</Link>
-                </Button>
+                <Link href="/wedding-card">
+                <ShinyButton>ตัวอย่างการ์ด</ShinyButton>
+                </Link>
               </div>
             </div>
           </div>
