@@ -60,7 +60,7 @@ export const reviews = [
     time: "1m ago",
     icon: User,
     color: "#D5F7F7",
-     link: "/feature/guestbook",
+    link: "/feature/guestbook",
   },
   {
     name: "Dress Code",
@@ -109,5 +109,22 @@ export const reviews = [
     icon: Video,
     color: "#F7F5D5",
     link: "/feature/video",
+  },
+];
+
+export const THEME_RECOMMENDATIONS = [
+  {
+    index: 1,
+    name: "🌿 Olive Garden",
+    image: "/images/theme/olive-garden.png",
+    desc: "เขียวมะกอก + ฟอนต์ลายมือ แนวธรรมชาติ Outdoor เหมาะกับ คนที่ชอบแนวสวน ธรรมชาติ",
+    link: "/example/basic/olive-garden",
+  },
+  {
+    index: 2,
+    name: "🌿 Olive Garden",
+    image: "/images/theme/olive-garden.png",
+    desc: "เขียวมะกอก + ฟอนต์ลายมือ แนวธรรมชาติ Outdoor เหมาะกับ คนที่ชอบแนวสวน ธรรมชาติ",
+    link: "/example/basic/olive-garden",
   },
 ];

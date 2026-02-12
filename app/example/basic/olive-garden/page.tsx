@@ -1,6 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
+import Link from "next/link";
+import Swal from "sweetalert2";
 import logo from "@/public/logo-ex.png";
 import logoWhite from "@/public/logo-ex-wh.png";
 import { MapPin } from "lucide-react";
@@ -12,9 +15,6 @@ import ShiftingCountdown from "@/components/theme/ShiftingCoundown";
 import { motion } from "framer-motion";
 import { SparklesText } from "@/components/ui/sparkles-text";
 import HeaderTheme from "@/components/theme/HeaderTheme";
-import { useState } from "react";
-import Link from "next/link";
-import Swal from "sweetalert2";
 
 const data = {};
 

@@ -102,15 +102,6 @@ const packages = [
     link: "/feature/gallery",
   },
   {
-    feature: "เพลงประกอบ",
-    desc: "เปิดเพลงประกอบอัตโมมัติเมื่อเข้าชมการ์ด",
-    basic: "-",
-    standard: "-",
-    premium: "✓",
-    deluxe: "✓",
-    link: "/feature/song",
-  },
-  {
     feature: "วิดีโอ",
     desc: "ฝังวิดีโอ Pre-wedding จาก Youtube",
     basic: "-",
@@ -129,7 +120,7 @@ const packages = [
     link: "/feature/countdown",
   },
   {
-    feature: "Guest Book ออนไลน์",
+    feature: "Guest Book ออนไลน์ (ยังไม่เปิดให้บริการ)",
     desc: "ให้แขกเขียนอวยพร",
     basic: "-",
     standard: "-",
@@ -248,15 +239,15 @@ const Pricing = () => {
             <TableFooter>
               <TableRow className="text-lg font-bold">
                 <TableCell>ราคา (บาท)</TableCell>
-                <TableCell className="text-center text-rose-700">599</TableCell>
+                <TableCell className="text-center text-rose-700">Free</TableCell>
                 <TableCell className="text-center  text-rose-700">
-                  1,499
+                  Free
                 </TableCell>
                 <TableCell className="text-center  text-rose-700">
-                  2,499
+                  Free
                 </TableCell>
                 <TableCell className="text-center  text-rose-700">
-                  3,499
+                  ยังไม่เปิดให้บริการ
                 </TableCell>
               </TableRow>
             </TableFooter>
